@@ -100,7 +100,6 @@ class _HomeState extends State<Home> {
                   ),
                   ),
                 ),
-
                 new Container(
                   height: 130.0,
                   margin: EdgeInsets.only(top:10.0),
