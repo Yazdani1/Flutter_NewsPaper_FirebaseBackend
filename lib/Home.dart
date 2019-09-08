@@ -44,7 +44,6 @@ class _HomeState extends State<Home> {
         title: new Text("News Portal"),
         backgroundColor: Color(0xFF222240),
       ),
-
       drawer: new Drawer(
         child: new ListView(
           children: <Widget>[
