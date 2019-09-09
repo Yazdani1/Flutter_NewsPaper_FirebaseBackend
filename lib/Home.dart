@@ -238,9 +238,7 @@ class _HomeState extends State<Home> {
           ),
 
           //second container end..
-
           //Third Container start...
-
           new Container(
             height: 300.0,
             margin: EdgeInsets.all(10.0),
