@@ -213,7 +213,7 @@ class _HomeState extends State<Home> {
                   boxFit: BoxFit.cover,
                   autoplay: true,
                   animationCurve: Curves.fastOutSlowIn,
-                  animationDuration: Duration(milliseconds: 500),
+                  animationDuration: Duration(milliseconds: 1000),
                   dotSize: 7.0,
                   dotIncreasedColor: Colors.red,
                   dotBgColor: Colors.transparent,
@@ -239,6 +239,125 @@ class _HomeState extends State<Home> {
 
           //second container end..
 
+          //Third Container start...
+
+          new Container(
+            height: 300.0,
+            margin: EdgeInsets.all(10.0),
+            child: new ListView(
+              children: <Widget>[
+
+                new Container(
+                  child: new Row(
+                    children: <Widget>[
+
+                      new Expanded(
+                        flex: 1,
+                        child: new Container(
+                          height: 100.0,
+                          decoration: new BoxDecoration(
+                            borderRadius: BorderRadius.circular(10.0),
+                            color: Color(0xFF272B4A),
+                          ),
+
+                          child: Align(
+                            alignment: Alignment.center,
+                            child: new Text("International News",
+                            style: TextStyle(
+                              fontSize: 19.0,
+                              color: Colors.white
+                            ),
+                            ),
+                          ),
+                        ),
+                      ),
+                      new SizedBox(width: 10.0,),
+
+                      new Expanded(
+                        flex: 1,
+                        child: new Container(
+                          height: 100.0,
+                          decoration: new BoxDecoration(
+                            borderRadius: BorderRadius.circular(10.0),
+                            color: Color(0xFF272B4A),
+                          ),
+
+                          child: Align(
+                            alignment: Alignment.center,
+                            child: new Text("Sports News",
+                              style: TextStyle(
+                                  fontSize: 19.0,
+                                  color: Colors.white
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+
+                    ],
+                  ),
+                ),//first container end..
+
+                new SizedBox(height: 10.0,),
+
+                new Container(
+                  child: new Row(
+                    children: <Widget>[
+
+                      new Expanded(
+                        flex: 1,
+                        child: new Container(
+                          height: 100.0,
+                          decoration: new BoxDecoration(
+                            borderRadius: BorderRadius.circular(10.0),
+                            color: Color(0xFF272B4A),
+                          ),
+
+                          child: Align(
+                            alignment: Alignment.center,
+                            child: new Text("Local News",
+                              style: TextStyle(
+                                  fontSize: 19.0,
+                                  color: Colors.white
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                      new SizedBox(width: 10.0,),
+
+                      new Expanded(
+                        flex: 1,
+                        child: new Container(
+                          height: 100.0,
+                          decoration: new BoxDecoration(
+                            borderRadius: BorderRadius.circular(10.0),
+                            color: Color(0xFF272B4A),
+                          ),
+
+                          child: Align(
+                            alignment: Alignment.center,
+                            child: new Text("Politics News",
+                              style: TextStyle(
+                                  fontSize: 19.0,
+                                  color: Colors.white
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+
+                    ],
+                  ),
+                ),
+
+
+              ],
+            ),
+          )
+
+
+          //Third Container End....
 
 
 
