@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'dart:async';
 import 'package:async/async.dart';
+import 'package:carousel_pro/carousel_pro.dart';
 //jkj
 
 class Home extends StatefulWidget {
@@ -190,9 +191,55 @@ class _HomeState extends State<Home> {
 
               ],
             ),
-          )
+          ),
 
           //First Container end..
+
+          //second container start...
+
+          new Container(
+
+            margin: EdgeInsets.all(10.0),
+            height: 150.0,
+            decoration: new BoxDecoration(
+              borderRadius: BorderRadius.circular(20.0)
+            ),
+
+            child: Center(
+              child: Container(
+                height: 350.0,
+                width: MediaQuery.of(context).size.width,
+                child: Carousel(
+                  boxFit: BoxFit.cover,
+                  autoplay: true,
+                  animationCurve: Curves.fastOutSlowIn,
+                  animationDuration: Duration(milliseconds: 500),
+                  dotSize: 7.0,
+                  dotIncreasedColor: Colors.red,
+                  dotBgColor: Colors.transparent,
+                  dotPosition: DotPosition.bottomCenter,
+                  dotVerticalPadding: 7.0,
+                  showIndicator: true,
+                  borderRadius: true,
+                  indicatorBgPadding: 10.0,
+                  overlayShadow: true,
+                  overlayShadowColors: Colors.black.withOpacity(0.4),
+                  overlayShadowSize: 10.0,
+                  images: [
+                    NetworkImage('https://www.bls.gov/spotlight/2017/sports-and-exercise/images/cover_image.jpg'),
+                    NetworkImage('https://www.lboro.ac.uk/media/wwwlboroacuk/external/content/research/sti/slide1.png'),
+                    NetworkImage('https://www.gc.ac.nz/wp-content/uploads/2018/03/sports-tools-640-417.jpg'),
+                    NetworkImage('https://www.valeofglamorgan.gov.uk/Images/Sports/Sports-equipment-Cropped-600x313.jpg')
+
+                  ],
+                ),
+              ),
+            ),
+          ),
+
+          //second container end..
+
+
 
 
         ],
