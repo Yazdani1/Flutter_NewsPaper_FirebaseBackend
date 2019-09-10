@@ -10,7 +10,7 @@ class _InternationalNewsState extends State<InternationalNews> {
   Widget build(BuildContext context) {
     return new Scaffold(
 
-      
+
 
     );
   }
