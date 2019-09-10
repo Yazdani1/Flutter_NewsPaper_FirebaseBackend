@@ -3,6 +3,10 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'dart:async';
 import 'package:async/async.dart';
 import 'package:carousel_pro/carousel_pro.dart';
+import 'Controller/InternationalNews.dart';
+import 'Controller/SportsNews.dart';
+import 'Controller/PoliticNews.dart';
+import 'Controller/LocalNews.dart';
 //test
 
 class Home extends StatefulWidget {
@@ -253,11 +257,16 @@ class _HomeState extends State<Home> {
                           ),
                           child: Align(
                             alignment: Alignment.center,
-                            child: new Text("International News",
-                            style: TextStyle(
-                              fontSize: 19.0,
-                              color: Colors.white
-                            ),
+                            child: InkWell(
+                              onTap: (){
+                                Navigator.of(context).push(new MaterialPageRoute(builder: (context)=>InternationalNews()));
+                              },
+                              child: new Text("International News",
+                              style: TextStyle(
+                                fontSize: 19.0,
+                                color: Colors.white
+                              ),
+                              ),
                             ),
                           ),
                         ),
@@ -275,10 +284,15 @@ class _HomeState extends State<Home> {
 
                           child: Align(
                             alignment: Alignment.center,
-                            child: new Text("Sports News",
-                              style: TextStyle(
-                                  fontSize: 19.0,
-                                  color: Colors.white
+                            child: InkWell(
+                              onTap: (){
+                                Navigator.of(context).push(new MaterialPageRoute(builder: (context)=>Sports()));
+                              },
+                              child: new Text("Sports News",
+                                style: TextStyle(
+                                    fontSize: 19.0,
+                                    color: Colors.white
+                                ),
                               ),
                             ),
                           ),
@@ -306,10 +320,15 @@ class _HomeState extends State<Home> {
 
                           child: Align(
                             alignment: Alignment.center,
-                            child: new Text("Local News",
-                              style: TextStyle(
-                                  fontSize: 19.0,
-                                  color: Colors.white
+                            child: InkWell(
+                              onTap: (){
+                                Navigator.of(context).push(new MaterialPageRoute(builder: (context)=>LocalNews()));
+                              },
+                              child: new Text("Local News",
+                                style: TextStyle(
+                                    fontSize: 19.0,
+                                    color: Colors.white
+                                ),
                               ),
                             ),
                           ),
@@ -328,10 +347,15 @@ class _HomeState extends State<Home> {
 
                           child: Align(
                             alignment: Alignment.center,
-                            child: new Text("Politics News",
-                              style: TextStyle(
-                                  fontSize: 19.0,
-                                  color: Colors.white
+                            child: InkWell(
+                              onTap: (){
+                                Navigator.of(context).push(new MaterialPageRoute(builder: (context)=>Politcs()));
+                              },
+                              child: new Text("Politics News",
+                                style: TextStyle(
+                                    fontSize: 19.0,
+                                    color: Colors.white
+                                ),
                               ),
                             ),
                           ),
