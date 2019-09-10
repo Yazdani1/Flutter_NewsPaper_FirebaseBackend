@@ -218,6 +218,7 @@ class _HomeState extends State<Home> {
                   overlayShadow: true,
                   overlayShadowColors: Colors.black.withOpacity(0.4),
                   overlayShadowSize: 10.0,
+
                   images: [
                     NetworkImage('https://www.bls.gov/spotlight/2017/sports-and-exercise/images/cover_image.jpg'),
                     NetworkImage('https://www.lboro.ac.uk/media/wwwlboroacuk/external/content/research/sti/slide1.png'),
