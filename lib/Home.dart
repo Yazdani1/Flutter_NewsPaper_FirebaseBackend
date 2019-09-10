@@ -251,7 +251,6 @@ class _HomeState extends State<Home> {
                             borderRadius: BorderRadius.circular(10.0),
                             color: Color(0xFF272B4A),
                           ),
-
                           child: Align(
                             alignment: Alignment.center,
                             child: new Text("International News",
