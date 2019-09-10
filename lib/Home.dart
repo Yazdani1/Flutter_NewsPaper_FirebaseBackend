@@ -140,7 +140,6 @@ class _HomeState extends State<Home> {
                                         ),
                                       ),
                                       new SizedBox(height: 10.0,),
-
                                       new Text(snapshot[index].data["des"],
                                         maxLines: 3,
                                         style: TextStyle(
