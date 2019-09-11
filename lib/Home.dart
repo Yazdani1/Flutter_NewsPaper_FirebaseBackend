@@ -223,10 +223,10 @@ class _HomeState extends State<Home> {
                   overlayShadowSize: 10.0,
 
                   images: [
-                    NetworkImage('https://www.bls.gov/spotlight/2017/sports-and-exercise/images/cover_image.jpg'),
-                    NetworkImage('https://www.lboro.ac.uk/media/wwwlboroacuk/external/content/research/sti/slide1.png'),
-                    NetworkImage('https://www.gc.ac.nz/wp-content/uploads/2018/03/sports-tools-640-417.jpg'),
-                    NetworkImage('https://www.valeofglamorgan.gov.uk/Images/Sports/Sports-equipment-Cropped-600x313.jpg')
+                    NetworkImage('https://images.pexels.com/photos/344029/pexels-photo-344029.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'),
+                    NetworkImage('https://images.pexels.com/photos/1618269/pexels-photo-1618269.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'),
+                    NetworkImage('https://images.pexels.com/photos/1103829/pexels-photo-1103829.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'),
+                    NetworkImage('https://images.pexels.com/photos/1332237/pexels-photo-1332237.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940')
 
                   ],
                 ),
