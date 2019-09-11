@@ -297,6 +297,7 @@ class _HomeState extends State<Home> {
                   ),
                 ),//first container end..
 
+                
                 new SizedBox(height: 10.0,),
                 new Container(
                   child: new Row(
