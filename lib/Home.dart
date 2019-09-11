@@ -233,7 +233,6 @@ class _HomeState extends State<Home> {
               ),
             ),
           ),
-
           //second container end..
           //Third Container start...
           new Container(
