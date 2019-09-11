@@ -200,7 +200,6 @@ class _HomeState extends State<Home> {
             decoration: new BoxDecoration(
               borderRadius: BorderRadius.circular(20.0)
             ),
-
             child: Center(
               child: Container(
                 height: 350.0,
