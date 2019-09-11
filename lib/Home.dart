@@ -195,7 +195,6 @@ class _HomeState extends State<Home> {
           //second container start...
 
           new Container(
-
             margin: EdgeInsets.all(10.0),
             height: 150.0,
             decoration: new BoxDecoration(
