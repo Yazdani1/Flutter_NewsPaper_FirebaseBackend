@@ -225,7 +225,7 @@ class _HomeState extends State<Home> {
                   images: [
                     NetworkImage('https://images.pexels.com/photos/344029/pexels-photo-344029.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'),
                     NetworkImage('https://images.pexels.com/photos/1618269/pexels-photo-1618269.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'),
-                    NetworkImage('https://images.pexels.com/photos/1103829/pexels-photo-1103829.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'),
+                    NetworkImage('https://images.pexels.com/photos/2081007/pexels-photo-2081007.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'),
                     NetworkImage('https://images.pexels.com/photos/1332237/pexels-photo-1332237.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940')
 
                   ],
