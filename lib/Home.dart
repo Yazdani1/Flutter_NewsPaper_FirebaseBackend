@@ -77,8 +77,6 @@ class _HomeState extends State<Home> {
                   Navigator.of(context).push(new MaterialPageRoute(builder: (context)=>InternationalNews()));
                 },
               ),
-
-
               new ListTile(
                 title: new Text("Sports News",style: TextStyle(fontSize: 18.0,color: Colors.white),),
                 leading: new Icon(Icons.satellite,size: 20.0,color: Colors.white,),
