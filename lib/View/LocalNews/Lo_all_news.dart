@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'dart:async';
+import 'package:flutter_news2/View/LocalNews/LocalPostDetails.dart';
 
 class LocalAllNews extends StatefulWidget {
   @override
@@ -119,10 +120,15 @@ class _LocalAllNewsState extends State<LocalAllNews> {
                                         borderRadius: BorderRadius.circular(15.0),
                                         color: Colors.blueGrey
                                     ),
-                                    child: new Text("View Details",
-                                      style: TextStyle(
-                                          fontSize: 15.0,
-                                          color: Colors.white
+                                    child: InkWell(
+                                      onTap: (){
+                                        Navigator.of(context).push(new MaterialPageRoute(builder: (context)=>LocalPostDetails(snapshot[index])));
+                                      },
+                                      child: new Text("View Details",
+                                        style: TextStyle(
+                                            fontSize: 15.0,
+                                            color: Colors.white
+                                        ),
                                       ),
                                     ),
                                   ),

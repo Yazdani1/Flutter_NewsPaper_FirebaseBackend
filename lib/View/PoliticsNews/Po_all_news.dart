@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'dart:async';
-
+import 'package:flutter_news2/View/PoliticsNews/PoliticsPostDetails.dart';
 class Politica_all_News extends StatefulWidget {
   @override
   _Politica_all_NewsState createState() => new _Politica_all_NewsState();
@@ -119,10 +119,15 @@ class _Politica_all_NewsState extends State<Politica_all_News> {
                                         borderRadius: BorderRadius.circular(15.0),
                                         color: Colors.blueGrey
                                     ),
-                                    child: new Text("View Details",
-                                      style: TextStyle(
-                                          fontSize: 15.0,
-                                          color: Colors.white
+                                    child: InkWell(
+                                      onTap: (){
+                                        Navigator.of(context).push(new MaterialPageRoute(builder: (context)=>PoliticsPostDetails(snapshot[index])));
+                                      },
+                                      child: new Text("View Details",
+                                        style: TextStyle(
+                                            fontSize: 15.0,
+                                            color: Colors.white
+                                        ),
                                       ),
                                     ),
                                   ),

@@ -13,7 +13,7 @@ class PostDetails extends StatefulWidget {
 }
 
 class _PostDetailsState extends State<PostDetails> {
-  
+
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
