@@ -66,9 +66,6 @@ class _In_GalleryState extends State<In_Gallery> {
                     child: new Text("International News"),
                   ),
                 )
-
-
-
               ],
             ),
           );
