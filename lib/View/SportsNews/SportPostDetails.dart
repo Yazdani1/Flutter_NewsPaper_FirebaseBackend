@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 import 'dart:async';
 import 'package:cloud_firestore/cloud_firestore.dart';
 
-class PoliticsPostDetails extends StatefulWidget {
+class SportsPostDetails extends StatefulWidget {
   @override
-  _PoliticsPostDetailsState createState() => new _PoliticsPostDetailsState();
+  _SportsPostDetailsState createState() => new _SportsPostDetailsState();
 }
 
-class _PoliticsPostDetailsState extends State<PoliticsPostDetails> {
+class _SportsPostDetailsState extends State<SportsPostDetails> {
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
@@ -15,5 +15,3 @@ class _PoliticsPostDetailsState extends State<PoliticsPostDetails> {
     );
   }
 }
-
-
