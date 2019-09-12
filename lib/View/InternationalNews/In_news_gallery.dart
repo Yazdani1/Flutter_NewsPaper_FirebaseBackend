@@ -58,7 +58,6 @@ class _In_GalleryState extends State<In_Gallery> {
                     decoration: new BoxDecoration(
                       color: Colors.deepOrange,
                       borderRadius: BorderRadius.only(
-
                         bottomLeft: Radius.circular(15.0),
                         topRight: Radius.circular(15.0)
                       )
