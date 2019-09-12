@@ -13,8 +13,7 @@ class PostDetails extends StatefulWidget {
 }
 
 class _PostDetailsState extends State<PostDetails> {
-
-
+  
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
@@ -47,12 +46,14 @@ class _PostDetailsState extends State<PostDetails> {
             height: MediaQuery.of(context).size.height,
             color: Color(0xFF272B4A),
             child: new Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
 
                 //first container...
                 new Container(
                   margin: EdgeInsets.all(10.0),
                   child: new Row(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
                       
                       new CircleAvatar(
@@ -61,11 +62,40 @@ class _PostDetailsState extends State<PostDetails> {
                         backgroundColor: Colors.deepOrange,
                       ),
                       new SizedBox(width: 8.0,),
-                      
+
+                      new Container(
+                          width: MediaQuery.of(context).size.width/1.3,
+                          child:new Text(widget.snapshot.data["title"],
+                            style: TextStyle(
+                                fontSize: 17.0,
+                                color: Colors.white
+                            ),
+                          )
+
+                      )
+
                     ],
                   ),
-                ),
+                ),//end of first container
+                //second container
+                new Container(
+                  margin: EdgeInsets.all(10.0),
+                  child: new Text(widget.snapshot.data["view"]+" View",
+                  style: TextStyle(
+                    fontSize: 21.0,
+                    color: Colors.deepOrange
+                  ),
+                  ),
+                ),//end of second container..
 
+                new SizedBox(height: 10.0,),
+
+                new Text(widget.snapshot.data["des"],
+                style: TextStyle(
+                  fontSize: 17.0,
+                  color: Colors.white
+                ),
+                )
               ],
             ),
           ),
