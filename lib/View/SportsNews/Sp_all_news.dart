@@ -8,7 +8,6 @@ class SportsAllNews extends StatefulWidget {
 }
 
 class _SportsAllNewsState extends State<SportsAllNews> {
-
   StreamSubscription<QuerySnapshot>subscription;
 
   List<DocumentSnapshot>snapshot;
