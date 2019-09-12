@@ -26,10 +26,6 @@ class _SportsAllNewsState extends State<SportsAllNews> {
     });
     super.initState();
   }
-
-
-
-
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
