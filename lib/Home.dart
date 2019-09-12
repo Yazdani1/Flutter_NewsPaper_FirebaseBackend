@@ -68,7 +68,6 @@ class _HomeState extends State<Home> {
                   color: Color(0xFF222240),
                 ),
               ),
-
               new ListTile(
                 title: new Text("International News",style: TextStyle(fontSize: 18.0,color: Colors.white),),
                 leading: new Icon(Icons.all_inclusive,size: 20.0,color: Colors.white,),
