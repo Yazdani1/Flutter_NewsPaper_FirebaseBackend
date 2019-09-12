@@ -38,7 +38,6 @@ class _In_GalleryState extends State<In_Gallery> {
 
           return Container(
             margin: EdgeInsets.all(10.0),
-            height: 300.0,
             child: new Stack(
               children: <Widget>[
 
@@ -51,12 +50,11 @@ class _In_GalleryState extends State<In_Gallery> {
                     ),
                   ),
                 ),
-
                 new Positioned(
-                  bottom: 50.0,
-                  left: 30.0,
-                  top: 40.0,
                   child: new Container(
+                    height: 50.0,
+                    width: 150.0,
+                    margin: EdgeInsets.all(10.0),
                     decoration: new BoxDecoration(
                       color: Colors.deepOrange,
                       borderRadius: BorderRadius.only(
