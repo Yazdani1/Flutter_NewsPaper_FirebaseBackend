@@ -8,6 +8,10 @@ import 'Controller/SportsNews.dart';
 import 'Controller/PoliticNews.dart';
 import 'Controller/LocalNews.dart';
 import 'HomePostDetails.dart';
+import 'package:flutter_news2/Controller/InternationalNews.dart';
+import 'package:flutter_news2/Controller/LocalNews.dart';
+import 'package:flutter_news2/Controller/PoliticNews.dart';
+import 'package:flutter_news2/Controller/SportsNews.dart';
 //test
 
 class Home extends StatefulWidget {
@@ -50,36 +54,63 @@ class _HomeState extends State<Home> {
         backgroundColor: Color(0xFF222240),
       ),
       drawer: new Drawer(
-        child: new ListView(
-          children: <Widget>[
+        child: new Container(
+          decoration: new BoxDecoration(
+            color: Color(0xFF272B4A),
+          ),
+          child: new ListView(
+            children: <Widget>[
 
-            new UserAccountsDrawerHeader(
-                accountName: null,
+              new UserAccountsDrawerHeader(
+                accountName: new Text("News Paper App"),
                 accountEmail: null,
-              decoration: new BoxDecoration(
-                color: Color(0xFF222240),
+                decoration: new BoxDecoration(
+                  color: Color(0xFF222240),
+                ),
               ),
-            ),
-            
-            new ListTile(
-              title: new Text("Item 1",style: TextStyle(fontSize: 20.0),),
-              leading: new Icon(Icons.search,size: 20.0,color: Colors.purple,),
-            ),
+
+              new ListTile(
+                title: new Text("International News",style: TextStyle(fontSize: 18.0,color: Colors.white),),
+                leading: new Icon(Icons.all_inclusive,size: 20.0,color: Colors.white,),
+                onTap: (){
+                  Navigator.of(context).pop();
+                  Navigator.of(context).push(new MaterialPageRoute(builder: (context)=>InternationalNews()));
+                },
+              ),
 
 
-            new ListTile(
-              title: new Text("Item 2",style: TextStyle(fontSize: 20.0),),
-              leading: new Icon(Icons.present_to_all,size: 20.0,color: Colors.purple,),
-            ),
+              new ListTile(
+                title: new Text("Sports News",style: TextStyle(fontSize: 18.0,color: Colors.white),),
+                leading: new Icon(Icons.satellite,size: 20.0,color: Colors.white,),
+                onTap: (){
+                  Navigator.of(context).pop();
+                  Navigator.of(context).push(new MaterialPageRoute(builder: (context)=>Sports()));
+                },
+              ),
 
 
-            new ListTile(
-              title: new Text("Item 3",style: TextStyle(fontSize: 20.0),),
-              leading: new Icon(Icons.face,size: 20.0,color: Colors.purple,),
-            ),
+              new ListTile(
+                title: new Text("Local News",style: TextStyle(fontSize: 18.0,color: Colors.white),),
+                leading: new Icon(Icons.satellite,size: 20.0,color: Colors.white,),
+                onTap: (){
+                  Navigator.of(context).pop();
+                  Navigator.of(context).push(new MaterialPageRoute(builder: (context)=>LocalNews()));
+                },
+              ),
+
+              new ListTile(
+                title: new Text("Politics News",style: TextStyle(fontSize: 18.0,color: Colors.white),),
+                leading: new Icon(Icons.satellite,size: 20.0,color: Colors.white,),
+                onTap: (){
+                  Navigator.of(context).pop();
+                  Navigator.of(context).push(new MaterialPageRoute(builder: (context)=>Politcs()));
+                },
+              ),
 
 
-          ],
+
+            ],
+          ),
         ),
       ),
 
@@ -137,11 +168,16 @@ class _HomeState extends State<Home> {
                                   child: new Column(
                                     crossAxisAlignment: CrossAxisAlignment.start,
                                     children: <Widget>[
-                                      new Text(snapshot[index].data["title"],
-                                        maxLines: 1,
-                                        style: TextStyle(
-                                            fontSize: 21.0,
-                                            color: Colors.white
+                                      InkWell(
+                                        onTap: (){
+                                          Navigator.of(context).push(new MaterialPageRoute(builder: (context)=>HomePageDetails(snapshot[index])));
+                                        },
+                                        child: new Text(snapshot[index].data["title"],
+                                          maxLines: 1,
+                                          style: TextStyle(
+                                              fontSize: 21.0,
+                                              color: Colors.white
+                                          ),
                                         ),
                                       ),
                                       new SizedBox(height: 10.0,),
