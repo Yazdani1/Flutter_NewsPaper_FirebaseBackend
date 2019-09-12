@@ -51,18 +51,28 @@ class _In_GalleryState extends State<In_Gallery> {
                   ),
                 ),
                 new Positioned(
+                  top: 40.0,
+                  left: 30.0,
                   child: new Container(
                     height: 50.0,
-                    width: 150.0,
+                    width: 250.0,
                     margin: EdgeInsets.all(10.0),
                     decoration: new BoxDecoration(
-                      color: Colors.deepOrange,
+                      color: Colors.blueGrey,
                       borderRadius: BorderRadius.only(
                         bottomLeft: Radius.circular(15.0),
                         topRight: Radius.circular(15.0)
                       )
                     ),
-                    child: new Text("International News"),
+                    child: Align(
+                      alignment: Alignment.center,
+                        child: new Text("International News",
+                        style: TextStyle(
+                          fontSize: 20.0,
+                          color: Colors.white
+                        ),
+                        )
+                    ),
                   ),
                 )
               ],

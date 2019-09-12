@@ -16,7 +16,7 @@ class _LocalPostDetailsState extends State<LocalPostDetails> {
     return new Scaffold(
 
       appBar: new AppBar(
-        title: new Text("International Post Details"),
+        title: new Text("Local Post Details"),
         backgroundColor: Color(0xFF222240),
       ),
       backgroundColor: Color(0xFF222240),

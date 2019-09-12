@@ -17,7 +17,7 @@ class _SportsPostDetailsState extends State<SportsPostDetails> {
     return new Scaffold(
 
       appBar: new AppBar(
-        title: new Text("International Post Details"),
+        title: new Text("Sports Post Details"),
         backgroundColor: Color(0xFF222240),
       ),
       backgroundColor: Color(0xFF222240),

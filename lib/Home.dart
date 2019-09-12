@@ -7,6 +7,7 @@ import 'Controller/InternationalNews.dart';
 import 'Controller/SportsNews.dart';
 import 'Controller/PoliticNews.dart';
 import 'Controller/LocalNews.dart';
+import 'HomePostDetails.dart';
 //test
 
 class Home extends StatefulWidget {

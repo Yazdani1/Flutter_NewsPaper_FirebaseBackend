@@ -18,7 +18,7 @@ class _PoliticsPostDetailsState extends State<PoliticsPostDetails> {
     return new Scaffold(
 
       appBar: new AppBar(
-        title: new Text("International Post Details"),
+        title: new Text("Politics Post Details"),
         backgroundColor: Color(0xFF222240),
       ),
       backgroundColor: Color(0xFF222240),
