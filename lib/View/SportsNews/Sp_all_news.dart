@@ -45,7 +45,6 @@ class _SportsAllNewsState extends State<SportsAllNews> {
               margin: EdgeInsets.all(10.0),
               child: new Row(
                 children: <Widget>[
-
                   new Expanded(
                     flex: 1,
                     child: ClipRRect(
