@@ -31,7 +31,7 @@ class _In_GalleryState extends State<In_Gallery> {
   Widget build(BuildContext context) {
     return new Scaffold(
       backgroundColor: Color(0xFF222240),
-      
+
       body: new ListView.builder(
         itemCount: snapshot.length,
         itemBuilder: (context,index){
@@ -41,6 +41,33 @@ class _In_GalleryState extends State<In_Gallery> {
             height: 300.0,
             child: new Stack(
               children: <Widget>[
+
+                new Container(
+                  child: new ClipRRect(
+                    borderRadius: BorderRadius.circular(15.0),
+                    child: new Image.network(snapshot[index].data["image"],
+                    height: 300.0,
+                      fit: BoxFit.cover,
+                    ),
+                  ),
+                ),
+
+                new Positioned(
+                  bottom: 50.0,
+                  left: 30.0,
+                  top: 40.0,
+                  child: new Container(
+                    decoration: new BoxDecoration(
+                      color: Colors.deepOrange,
+                      borderRadius: BorderRadius.only(
+
+                        bottomLeft: Radius.circular(15.0),
+                        topRight: Radius.circular(15.0)
+                      )
+                    ),
+                    child: new Text("International News"),
+                  ),
+                )
 
 
 
