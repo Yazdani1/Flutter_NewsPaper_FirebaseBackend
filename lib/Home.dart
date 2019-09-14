@@ -136,7 +136,6 @@ class _HomeState extends State<Home> {
                       scrollDirection: Axis.horizontal,
                       itemCount: snapshot.length,
                       itemBuilder: (context,index){
-                        
                         return Container(
                           width: 300.0,
                           margin: EdgeInsets.only(left: 10.0),
