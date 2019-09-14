@@ -48,7 +48,6 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return new Scaffold(
       backgroundColor: Color(0xFF222240),
-
       appBar: new AppBar(
         title: new Text("News Portal"),
         backgroundColor: Color(0xFF222240),
