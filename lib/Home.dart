@@ -101,9 +101,6 @@ class _HomeState extends State<Home> {
                   Navigator.of(context).push(new MaterialPageRoute(builder: (context)=>Politcs()));
                 },
               ),
-
-
-
             ],
           ),
         ),
