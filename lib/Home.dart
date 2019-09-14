@@ -92,7 +92,6 @@ class _HomeState extends State<Home> {
                   Navigator.of(context).push(new MaterialPageRoute(builder: (context)=>LocalNews()));
                 },
               ),
-
               new ListTile(
                 title: new Text("Politics News",style: TextStyle(fontSize: 18.0,color: Colors.white),),
                 leading: new Icon(Icons.satellite,size: 20.0,color: Colors.white,),
@@ -105,7 +104,6 @@ class _HomeState extends State<Home> {
           ),
         ),
       ),
-
       body: new ListView(
         children: <Widget>[
 
