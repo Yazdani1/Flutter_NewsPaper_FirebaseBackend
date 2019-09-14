@@ -37,7 +37,6 @@ class _HomeState extends State<Home> {
         snapshot=datasnap.documents;
 
       });
-
     });
     super.initState();
   }
