@@ -31,7 +31,6 @@ class _In_GalleryState extends State<In_Gallery> {
   Widget build(BuildContext context) {
     return new Scaffold(
       backgroundColor: Color(0xFF222240),
-
       body: new ListView.builder(
         itemCount: snapshot.length,
         itemBuilder: (context,index){
