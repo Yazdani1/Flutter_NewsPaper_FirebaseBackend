@@ -35,7 +35,6 @@ class _In_GalleryState extends State<In_Gallery> {
       body: new ListView.builder(
         itemCount: snapshot.length,
         itemBuilder: (context,index){
-
           return Container(
             margin: EdgeInsets.all(10.0),
             child: new Stack(
