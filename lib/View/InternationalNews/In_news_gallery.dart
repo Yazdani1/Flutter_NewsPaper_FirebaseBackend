@@ -12,7 +12,6 @@ class _In_GalleryState extends State<In_Gallery> {
   StreamSubscription<QuerySnapshot>subscription;
 
   List<DocumentSnapshot>snapshot;
-
   CollectionReference collectionReference=Firestore.instance.collection("InternationalNews");
 
   @override
