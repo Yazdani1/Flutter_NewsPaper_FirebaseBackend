@@ -36,7 +36,6 @@ class _In_GalleryState extends State<In_Gallery> {
             margin: EdgeInsets.all(10.0),
             child: new Stack(
               children: <Widget>[
-
                 new Container(
                   child: new ClipRRect(
                     borderRadius: BorderRadius.circular(15.0),
