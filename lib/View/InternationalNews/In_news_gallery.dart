@@ -59,8 +59,6 @@ class _In_GalleryState extends State<In_Gallery> {
                         topRight: Radius.circular(15.0)
                       )
                     ),
-
-                    
                     child: Align(
                       alignment: Alignment.center,
                         child: new Text("International News",
