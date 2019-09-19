@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'dart:async';
 
-
 class In_Gallery extends StatefulWidget {
   @override
   _In_GalleryState createState() => new _In_GalleryState();
