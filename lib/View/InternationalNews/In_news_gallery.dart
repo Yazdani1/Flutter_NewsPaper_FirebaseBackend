@@ -45,6 +45,10 @@ class _In_GalleryState extends State<In_Gallery> {
                     ),
                   ),
                 ),
+
+
+
+                
                 new Positioned(
                   top: 40.0,
                   left: 30.0,
