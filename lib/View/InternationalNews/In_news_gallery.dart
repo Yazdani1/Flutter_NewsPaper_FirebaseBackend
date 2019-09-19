@@ -16,7 +16,6 @@ class _In_GalleryState extends State<In_Gallery> {
 
   @override
   void initState() {
-
     subscription=collectionReference.snapshots().listen((datasnap){
       setState(() {
         snapshot=datasnap.documents;
