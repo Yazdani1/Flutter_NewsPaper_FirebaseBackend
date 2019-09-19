@@ -72,7 +72,6 @@ class _In_GalleryState extends State<In_Gallery> {
               ],
             ),
           );
-
         }
       ),
 
