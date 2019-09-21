@@ -16,7 +16,6 @@ class _InternationalNewsState extends State<InternationalNews>with SingleTickerP
     tabController=new TabController(length: 2, vsync: this);
     super.initState();
   }
-
   @override
   void dispose() {
     tabController.dispose();
