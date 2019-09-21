@@ -21,8 +21,6 @@ class _InternationalNewsState extends State<InternationalNews>with SingleTickerP
     tabController.dispose();
     super.dispose();
   }
-
-
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
