@@ -67,7 +67,6 @@ class _In_AllNewsState extends State<In_AllNews> {
                    flex: 2,
                    child: new Column(
                      children: <Widget>[
-
                        new Text(snapshot[index].data["title"],
                        maxLines: 1,
                        style: TextStyle(
