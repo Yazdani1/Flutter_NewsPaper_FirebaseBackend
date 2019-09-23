@@ -76,7 +76,6 @@ class _In_AllNewsState extends State<In_AllNews> {
                        ),
                        ),
                        new SizedBox(height: 5.0,),
-
                        new Text(snapshot[index].data["des"],
                          maxLines: 4,
                          style: TextStyle(
