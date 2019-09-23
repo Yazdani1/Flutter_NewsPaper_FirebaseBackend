@@ -93,7 +93,6 @@ class _In_AllNewsState extends State<In_AllNews> {
                              new Container(
                                child: new Row(
                                  children: <Widget>[
-
                                    new Icon(Icons.remove_red_eye,
                                      color: Colors.deepOrange,
                                    ),
