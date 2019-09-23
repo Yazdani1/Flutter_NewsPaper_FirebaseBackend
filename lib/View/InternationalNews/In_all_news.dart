@@ -142,7 +142,6 @@ class _In_AllNewsState extends State<In_AllNews> {
                ],
              ),
            );
-
         }
       ),
 
