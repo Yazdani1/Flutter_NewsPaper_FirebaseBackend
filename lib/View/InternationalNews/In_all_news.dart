@@ -85,7 +85,6 @@ class _In_AllNewsState extends State<In_AllNews> {
                          ),
                        ),
                        new SizedBox(height: 15.0,),
-                       
                        new Container(
                          child: new Row(
                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
