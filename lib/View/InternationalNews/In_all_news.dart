@@ -108,7 +108,7 @@ class _In_AllNewsState extends State<In_AllNews> {
                                  ],
                                ),
                              ),
-                             
+
                              new Container(
                                child: Align(
                                  alignment: Alignment.bottomRight,
@@ -132,7 +132,6 @@ class _In_AllNewsState extends State<In_AllNews> {
                                  ),
                                ),
                              )
-
                            ],
                          ),
                        ),
