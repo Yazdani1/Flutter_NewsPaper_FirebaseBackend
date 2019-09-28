@@ -105,7 +105,7 @@ class _In_AllNewsState extends State<In_AllNews> {
                                  ],
                                ),
                              ),
-                             
+
                              new Container(
                                child: Align(
                                  alignment: Alignment.bottomRight,
@@ -115,6 +115,7 @@ class _In_AllNewsState extends State<In_AllNews> {
                                        borderRadius: BorderRadius.circular(15.0),
                                        color: Colors.blueGrey
                                    ),
+                                   
                                    child: InkWell(
                                      onTap: (){
                                        Navigator.of(context).push(new MaterialPageRoute(builder: (context)=>PostDetails(snapshot[index])));
