@@ -62,7 +62,6 @@ class _In_AllNewsState extends State<In_AllNews> {
                  ),
 
                  new SizedBox(width: 10.0,),
-
                  new Expanded(
                    flex: 2,
                    child: new Column(
@@ -82,7 +81,7 @@ class _In_AllNewsState extends State<In_AllNews> {
                              color: Colors.white
                          ),
                        ),
-                       
+
                        new SizedBox(height: 15.0,),
                        new Container(
                          child: new Row(
