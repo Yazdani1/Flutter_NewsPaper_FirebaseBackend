@@ -87,7 +87,6 @@ class _In_AllNewsState extends State<In_AllNews> {
                          child: new Row(
                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
                            children: <Widget>[
-
                              new Container(
                                child: new Row(
                                  children: <Widget>[
