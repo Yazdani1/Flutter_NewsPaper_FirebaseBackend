@@ -49,7 +49,6 @@ class _In_AllNewsState extends State<In_AllNews> {
              margin: EdgeInsets.all(10.0),
              child: new Row(
                children: <Widget>[
-
                  new Expanded(
                    flex: 1,
                    child: ClipRRect(
