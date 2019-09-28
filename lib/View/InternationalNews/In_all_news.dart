@@ -82,6 +82,7 @@ class _In_AllNewsState extends State<In_AllNews> {
                              color: Colors.white
                          ),
                        ),
+                       
                        new SizedBox(height: 15.0,),
                        new Container(
                          child: new Row(
