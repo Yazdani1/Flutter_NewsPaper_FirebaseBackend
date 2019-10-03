@@ -59,7 +59,6 @@ class _In_AllNewsState extends State<In_AllNews> {
                      ),
                    ),
                  ),
-
                  
                  new SizedBox(width: 10.0,),
                  new Expanded(
