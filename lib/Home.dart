@@ -253,7 +253,6 @@ class _HomeState extends State<Home> {
             margin: EdgeInsets.all(10.0),
             child: new ListView(
               children: <Widget>[
-
                 new Container(
                   child: new Row(
                     children: <Widget>[
